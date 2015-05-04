@@ -1,0 +1,47 @@
+/*
+    This stylesheet contains all the code for the examples in the CSS Link Styling tutorial
+*/
+
+#blankSlateLink a{
+    color: #000;
+    text-decoration: none;
+}
+
+#secondExample a{
+    color: #000;
+    text-decoration: none;
+}
+
+#secondExample a:hover{
+    text-decoration: underline;
+}
+
+#thirdExample a{
+    color: #000;
+    text-decoration: none;
+}
+
+#thirdExample a:hover{
+    text-decoration: underline;
+}
+
+#thirdExample a:visited{
+    color: #666;
+}
+
+#fourthExample a{
+    color: #000;
+    text-decoration: none;
+}
+
+#fourthExample a:hover{
+    text-decoration: underline;
+}
+
+#fourthExample a:visited{
+    color: #666;
+}
+
+#fourthExample a:active{
+    color: #FF69B4;
+}
