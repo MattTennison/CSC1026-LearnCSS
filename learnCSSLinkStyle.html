@@ -10,7 +10,9 @@
     <body>
         <div id="header">
             <div class="container">
-                <div id="headerLogo">LearnCSS</div>
+                <a href="index.html">
+                    <div id="headerLogo">LearnCSS</div>
+                </a>
                 <ul id="headerNavigation">
                     <li><a href="#">Tutorials</a></li>
                     <li><a href="#">Quizzes</a></li>
@@ -18,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="hero">
             <div class="container">
                 <div class="heroCircle" id="hcLinkStyling">
@@ -30,7 +32,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="tutorialContent">
             <div class="container">
                 <div class="tutorialContentBlock">
@@ -54,7 +56,7 @@ a{
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="tutorialContentBlock">
                     Now, at the moment our link doesn't show any link-like properities. To clearly show the user that this is a link, let's add the underline back in, but only when the user is hovering over it.
                     <div class="tutorialCodeBlock">
@@ -72,7 +74,7 @@ a:hover{ /* the hover selection only applies this style when the users mouse is 
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="tutorialContentBlock">
                     We can also style links depending on if the user has visited them before or not. So, let's grey our links out if the user has clicked on them before.
                     <div class="tutorialCodeBlock">
@@ -96,7 +98,7 @@ a:visited{ /* the visited selector applies after the user has visited the link a
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="tutorialContentBlock">
                     We can also style links whilst they're being clicked. Just for fun, let's turn our links bright pink whilst they're being clicked.
                     <div class="tutorialCodeBlock">
@@ -124,13 +126,19 @@ a:active{ /* the active selector applies the moment the link is clicked */
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="tutorialContentBlock">
                     There's also another selector, :link which only targets unvisited, unactive links. This selector is essentially the same as the first one, a, so we're not going to go into it.
                 </div>
             </div>
         </div>
-        
+
+        <div id="footer">
+            <div class="container">
+                LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
+            </div>
+        </div>
+
         <script src="dependancies/prism.js"></script>
         <script src="dependancies/jQuery213.js"></script>
     </body>

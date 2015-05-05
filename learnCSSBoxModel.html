@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel=stylesheet href="stylesheets/style.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
+        <link rel=stylesheet href="dependancies/animate.css"/>
+        <link rel=stylesheet href="dependancies/prism.css" type="text/css"/>
+        <link rel=stylesheet href="stylesheets/cssLinkSpecifics.css" type="text/css"/>
+    </head>
+    <body>
+       <div id="header">
+            <div class="container">
+                <a href="index.html">
+                    <div id="headerLogo">LearnCSS</div>
+                </a>
+                <ul id="headerNavigation">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Code Examples</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="container">
+                <div class="heroCircle" id="hcBoxModel">
+                    <i class="fa fa-square-o"></i>
+                </div>
+                <div class="heroText">
+                    <div class="heroTextHeading">CSS Box Model</div>
+                    <div class="heroTextContent">Learn how the box model works. Includes information on margins, padding and more!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tutorialContent">
+            <div class="container">
+              <div id="boxModelBackground">
+                <div id="boxModelExample"></div>
+              </div>
+
+                <ul id="boxModelControls">
+                  <li id="enablePadding">Enable Padding</li>
+                  <li id="enableMargins">Enable Margin</li>
+                </ul>
+
+                <div class="tutorialCodeBlock">
+                  <div id="marginCodeBlock">
+<pre><code class="language-css">.boxClass{
+  margin: 20px;
+  padding: 0px;
+}</code></pre>
+                  </div>
+
+                  <div id="paddingCodeBlock">
+<pre><code class="language-css">.boxClass{
+  margin: 0px;
+  padding: 20px;
+}</code></pre>
+                  </div>
+                </div>
+                <br />
+                To put it simply: <span class="textHighlight">padding</span> includes the background, <span class="textHighlight">margin</span> doesn't.
+            </div>
+        </div>
+        <br />
+        <div id="footer">
+            <div class="container">
+                LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
+            </div>
+        </div>
+
+        <script src="dependancies/jQuery213.js"></script>
+        <script src="dependancies/prism.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

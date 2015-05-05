@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel=stylesheet href="stylesheets/style.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
+        <link rel=stylesheet href="dependancies/animate.css"/>
+        <link rel=stylesheet href="dependancies/prism.css" type="text/css"/>
+        <link rel=stylesheet href="stylesheets/cssLinkSpecifics.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <a href="index.html">
+                    <div id="headerLogo">LearnCSS</div>
+                </a>
+                <ul id="headerNavigation">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Code Examples</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="container">
+                <div class="heroCircle" id="hcSelectors">
+                  <i class="fa fa-desktop"></i>
+                </div>
+                <div class="heroText">
+                    <div class="heroTextHeading">
+                      <a href="learnCSSDisplay.html">CSS Display</a>
+                    </div>
+                    <div class="heroTextContent">Learn about the difference between inline and block elements!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tutorialContent">
+          <div class="container">
+            Block elements take up the entire page width, whilst inline elements will work around the text. To demonstrate this point, I'll surround the demo div with dummy text (Lorem Ipsum text). <br /><br />
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mollis erat. Mauris ac vestibulum arcu, vitae aliquam sem. Vestibulum nec lobortis est. In vulputate, purus id aliquet tincidunt, tortor metus ornare odio, sit amet posuere massa turpis eget purus. Proin non libero pulvinar lacus sodales venenatis.
+            <div id="displayExample">Block Element</div>
+            Nam at lobortis mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+            <ul id="displayExampleControls">
+              <li id="enableBlock">Enable Block</li>
+              <li id="enableInline">Enable Inline</li>
+            </ul>
+
+            <div class="tutorialCodeBlock">
+            <div id="blockCodeBlock">
+<pre><code class="language-css">.className{
+  display: block;
+}</code></pre>
+              </div>
+
+            <div id="inlineCodeBlock">
+<pre><code class="language-css">.className{
+  display: inline;
+}</code></pre>
+              </div>
+
+          </div>
+        </div>
+        <br />
+        <div id="footer">
+            <div class="container">
+                LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
+            </div>
+        </div>
+
+        <script src="dependancies/jQuery213.js"></script>
+        <script src="main.js"></script>
+        <script src="dependancies/prism.js"></script>
+    </body>
+</html>
