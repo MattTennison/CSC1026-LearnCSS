@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel=stylesheet href="../stylesheets/style.css" type="text/css"/>
+        <link rel=stylesheet href="../dependancies/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="../dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
+        <link rel=stylesheet href="../dependancies/animate.css"/>
+        <link rel=stylesheet href="../dependancies/prism.css" type="text/css"/>
+        <link rel=stylesheet href="../stylesheets/cssLinkSpecifics.css" type="text/css"/>
+        <title>LearnCSS: Learn CSS Box Model</title>
+    </head>
+    <body>
+       <div id="header">
+            <div class="container">
+                <a href="../index.html">
+                    <div id="headerLogo">LearnCSS</div>
+                </a>
+                <ul id="headerNavigation">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">Code Examples</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="container">
+                <div class="heroCircle" id="hcQuizPage">
+                    <i class="fa fa-pencil"></i>
+                </div>
+                <div class="heroText">
+                    <div class="heroTextHeading"><a href="#">LearnCSS Quiz!</a></div>
+                    <div class="heroTextContent">Test your knowledge on the content on our website!</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scoreCircle">
+        </div>
+
+        <div class="container">
+          <div class="quizQuestion">
+            <!-- Once the JS runs, this will have the question in plain text -->
+          </div>
+          <ul class="quizAnswers">
+            <!--
+              Once the JS runs, this will be filled with list elements.
+              The correct answers will have the class "right"
+            -->
+          </ul>
+
+          <div class="quizScore animated fadeIn">
+            <i class="fa fa-thumbs-up"></i>
+            You scored <span id="scoreValue">0 - JS DISABLED</span>. Well done!
+          </div>
+        </div>
+    <script src="../dependancies/jQuery213.js"></script>
+    <script src="../dependancies/prism.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

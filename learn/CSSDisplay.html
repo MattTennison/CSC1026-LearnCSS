@@ -1,16 +1,17 @@
 <html>
     <head>
-        <link rel=stylesheet href="stylesheets/style.css" type="text/css"/>
-        <link rel=stylesheet href="dependancies/normalize.css" type="text/css"/>
-        <link rel=stylesheet href="dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
-        <link rel=stylesheet href="dependancies/animate.css"/>
-        <link rel=stylesheet href="dependancies/prism.css" type="text/css"/>
-        <link rel=stylesheet href="stylesheets/cssLinkSpecifics.css" type="text/css"/>
+        <link rel=stylesheet href="../stylesheets/style.css" type="text/css"/>
+        <link rel=stylesheet href="../dependancies/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="../dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
+        <link rel=stylesheet href="../dependancies/animate.css"/>
+        <link rel=stylesheet href="../dependancies/prism.css" type="text/css"/>
+        <link rel=stylesheet href="../stylesheets/cssLinkSpecifics.css" type="text/css"/>
+        <title>LearnCSS: Learn CSS Display</title>
     </head>
     <body>
         <div id="header">
             <div class="container">
-                <a href="index.html">
+                <a href="../index.html">
                     <div id="headerLogo">LearnCSS</div>
                 </a>
                 <ul id="headerNavigation">
@@ -27,7 +28,7 @@
                 </div>
                 <div class="heroText">
                     <div class="heroTextHeading">
-                      <a href="learnCSSDisplay.html">CSS Display</a>
+                      <a href="#">CSS Display</a>
                     </div>
                     <div class="heroTextContent">Learn about the difference between inline and block elements!</div>
                 </div>
@@ -62,15 +63,32 @@
 
           </div>
         </div>
+
         <br />
+
+        <div class="tutorialContent">
+          <div class="container">
+            There's also the following display values:
+            <div class="tutorialCodeBlock">
+<pre><code class="language-css">.className{
+  display: inline-block; /* this allows you to make a inline element with a fixed width */
+  display: none; /* this hides the element, and acts like it has 0px width and height */
+}
+</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
         <div id="footer">
             <div class="container">
                 LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
             </div>
         </div>
 
-        <script src="dependancies/jQuery213.js"></script>
-        <script src="main.js"></script>
-        <script src="dependancies/prism.js"></script>
+        <script src="../dependancies/jQuery213.js"></script>
+        <script src="../main.js"></script>
+        <script src="../dependancies/prism.js"></script>
     </body>
 </html>
