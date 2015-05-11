@@ -28,7 +28,7 @@ var question5 = ['Following on, what property would you use to include padding i
 var question6 = ['If I want a element to be on the same line as other elements, but have a fixed size, what display type would I use?', 'inline-block', 'block', 'none', 'inline'];
 var questionList = [question1, question2, question3, question4, question5, question6];
 
-$(document).ready(function (){
+$(document).ready(function () {
     /* this function will make the methods on the homepage clickable whilst retaining their odd/even styling */
     addNavClickableDiv();
 
@@ -42,7 +42,7 @@ $(document).ready(function (){
     /*
     This code is specific for the LearnCSSBoxModel.html page
     */
-    $('#enablePadding').click(function (){
+    $('#enablePadding').click(function () {
         $('#boxModelExample').animate({
             'padding': '20px',
             'margin-left': 'auto',
@@ -56,7 +56,7 @@ $(document).ready(function (){
         $('#marginCodeBlock').hide();
     });
 
-    $('#enableMargins').click(function (){
+    $('#enableMargins').click(function () {
         console.log("Enable Margin Clicked");
         $('#boxModelExample').animate({
             'margin': '20px',
@@ -73,7 +73,7 @@ $(document).ready(function (){
     /*
     This code is specific for the LeanCSSDisplay.html page
     */
-    $('#enableBlock').click(function (){
+    $('#enableBlock').click(function () {
         enableBlock = true;
         enableInline = false;
         $('#displayExample').css({
@@ -87,7 +87,7 @@ $(document).ready(function (){
         console.log('Enable Block clicked')
     });
 
-    $('#enableInline').click(function (){
+    $('#enableInline').click(function () {
         enableInline = true;
         enableBlock = false;
         $('#displayExample').css({
@@ -106,7 +106,7 @@ $(document).ready(function (){
     advanceQuestion();
 });
 
-function advanceQuestion(){
+function advanceQuestion() {
     questionListCounter = questionListCounter + 1;
     if(questionList.length > questionListCounter){
         //set up variables
@@ -136,7 +136,7 @@ function advanceQuestion(){
         $('.quizAnswers').html(newHtml);
 
         $('.quizQuestion, .quizAnswers li').addClass('animated fadeIn');
-        $('.quizQuestion, .quizAnswers li').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (){
+        $('.quizQuestion, .quizAnswers li').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
             $(this).removeClass('animated fadeIn');
         });
 
@@ -146,7 +146,7 @@ function advanceQuestion(){
         $('.quizQuestion').hide();
         $('.quizAnswers').hide();
         $('#scoreCircle').addClass('animated FadeOut');
-        $('#scoreCircle').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (){
+        $('#scoreCircle').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
             $(this).hide();
         });
         console.log('No new questions');
@@ -159,8 +159,8 @@ function advanceQuestion(){
 This function adds click events to all answers in .quizAnswers
 I made it a function since you have to do this everytime you add new answers
 */
-function addClickHandlerAnswers(){
-    $('.quizAnswers li').click(function (){
+function addClickHandlerAnswers() {
+    $('.quizAnswers li').click(function () {
         if($(this).attr('class') == 'right'){
             quizScore = quizScore + 1;
             $('#scoreCircle').html(quizScore);
@@ -170,7 +170,7 @@ function addClickHandlerAnswers(){
 
             //make scoreCircle 'pulse'
             $('#scoreCircle').addClass('animated wobble');
-            $('#scoreCircle').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (){
+            $('#scoreCircle').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                 $('#scoreCircle').removeClass('animated wobble');
             });
 
@@ -184,13 +184,13 @@ function addClickHandlerAnswers(){
     });
 }
 
-$(window).ready(function (){
+$(window).ready(function () {
     $(window).resize(function () {
         addNavClickableDiv();
     });
 });
 
-function addClickableDivClickHandlers(){
+function addClickableDivClickHandlers() {
     $('.clickableDiv').click(function () {
         window.location = $(this).find('a').attr('href');
         console.log('Clicked a .clickableDiv');
@@ -198,7 +198,7 @@ function addClickableDivClickHandlers(){
     });
 }
 
-function addNavClickableDiv(){
+function addNavClickableDiv() {
     if ($(window).width() < 900) {
         $('#headerNavigation li').addClass('clickableDiv')
         addClickableDivClickHandlers()
