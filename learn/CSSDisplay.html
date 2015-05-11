@@ -17,9 +17,9 @@
                     <div id="headerLogo">LearnCSS</div>
                 </a>
                 <ul id="headerNavigation">
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Code Examples</a></li>
+                    <li id="headerNavigationTutorials"><a href="../index.html">Tutorials</a></li>
+                    <li id="headerNavigationQuizzes"><a href="../quiz/main.html">Quiz</a></li>
+                    <li id="headerNavigationCode"><a href="../codeExamples.html">Code Examples</a></li>
                 </ul>
             </div>
         </div>
@@ -73,15 +73,15 @@
             There's also the following display values:
             <div class="tutorialCodeBlock">
 <pre><code class="language-css">.className{
-  display: inline-block; /* this allows you to make a inline element with a fixed width */
-  display: none; /* this hides the element, and acts like it has 0px width and height */
+  display: inline-block; /* this allows you to make a inline element with a fixed width/height */
+  display: none; /* this hides the element, and other elements will act as if it doesn't exist */
 }
 </code></pre>
             </div>
           </div>
         </div>
 
-        <div class="tutorialContentBlock">
+        <div class="tutorialContentBlock clickableDiv">
             <div id="goToQuiz">
                 Feeling confident? <br/>
                 <span id="quizLink"><a href="../quiz/main.html">Take the quiz!</a></span>

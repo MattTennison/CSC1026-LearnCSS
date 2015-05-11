@@ -17,9 +17,9 @@
                     <div id="headerLogo">LearnCSS</div>
                 </a>
                 <ul id="headerNavigation">
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Code Examples</a></li>
+                    <li id="headerNavigationTutorials"><a href="../index.html">Tutorials</a></li>
+                    <li id="headerNavigationQuizzes"><a href="../quiz/main.html">Quiz</a></li>
+                    <li id="headerNavigationCode"><a href="../codeExamples.html">Code Examples</a></li>
                 </ul>
             </div>
         </div>
@@ -67,7 +67,42 @@
             </div>
         </div>
 
-        <div class="tutorialContentBlock">
+        <div class="tutorialContent">
+            <div class="container">
+                Typically 'padding' and 'margin' values aren't included in the width and height of the div. <br/>
+                So, say you have a div with the following style:
+                <div class="tutorialCodeBlock">
+                    <pre><code class="language-css">
+#div{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+}</code></pre>
+                </div>
+                This div would have a <span class="textHighlight">total width of 360px.</span><br />
+                <span class="footnote">(10px (margin-left) + 20px (padding-left) + 300px (width) + 20px (padding-right) + 10px (margin-right) = 360px)</span><br /><br />
+                If you want to include padding in the width calculation, use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">box-sizing</a>.
+                <div class="tutorialCodeBlock">
+                    <pre><code class="language-css">
+#div{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}</code></pre>
+                </div>
+                The border-box value means that borders and padding will be included in the width calculation. The div will now be just 320px wide. Unfortunately there's no other values that will also include margins. <br /><br />
+                <span class="textHighlight">box-sizing</span> is a CSS3 property, and has support in most browsers. <br /><br />
+                By default Internet Explorer (up to, and including, IE8) includes margin and padding in the width/height of a div. It's important to fix this - otherwise your measurements will be all wrong on IE. This can be solved by adding the following to the top of your HTML documents.
+                <div class="tutorialCodeBlock">
+                    <pre><code class="language-markup">&lt;!DOCTYPE html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="tutorialContentBlock clickableDiv">
             <div id="goToQuiz">
                 Feeling confident? <br/>
                 <span id="quizLink"><a href="../quiz/main.html">Take the quiz!</a></span>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet href="stylesheets/style.css" type="text/css"/>
+        <link rel=stylesheet href="stylesheets/smallScreenStyle.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/normalize.css" type="text/css"/>
+        <link rel=stylesheet href="dependancies/font-awesome-4.3.0/css/font-awesome.min.css"/>
+        <link rel=stylesheet href="dependancies/animate.css"/>
+        <link rel=stylesheet href="dependancies/prism.css" type="text/css"/>
+        <link rel=stylesheet href="stylesheets/cssLinkSpecifics.css" type="text/css"/>
+        <title>LearnCSS</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <a href="index.html">
+                    <div id="headerLogo">LearnCSS</div>
+                </a>
+                <ul id="headerNavigation">
+                    <li id="headerNavigationTutorials"><a href="index.html">Tutorials</a></li>
+                    <li id="headerNavigationQuizzes"><a href="quiz/main.html">Quiz</a></li>
+                    <li id="headerNavigationCode" class="headerNavigationSelected"><a href="codeExamples.html">Code Examples</a></li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div id="introCodeExamples">
+                This page is designed to give you a quick reference guide to the topics covered on the website, with commented code taken from the tutorial pages.
+            </div>
+            <div class="tutorialCodeBlock">
+                <pre><code class="language-css">
+a{
+    text-decoration: none; /* this removes the underline */
+    color: #000; /* this makes the text black, and not that ugly default link blue */
+}
+
+a:hover{ /* the hover selection only applies this style when the users mouse is over it */
+    text-decoration: underline; /* return the underline */
+}
+
+a:visited{ /* the visited selector applies after the user has visited the link at least once */
+    color: #666; /* this is just a light grey color */
+}
+
+a:active{ /* the active selector applies the moment the link is clicked */
+    color: #FF69B4;
+}
+</code></pre>
+                <div class="tutorialCodeBlockPreview">
+                    Preview: <span id="fourthExample"><a href="http://learnCSS.com">LearnCSS.com</a></span><br/>
+                    From: <a href="learn/CSSLinkStyle.html">Learn CSS Link Styles</a>
+                </div>
+            </div>
+            <br />
+            <div class="tutorialCodeBlock">
+                <pre><code class="language-css">
+.className{
+    /* this is the default div display type */
+    display: block;
+}
+
+.className{
+    /* this div will fit around the other content, and can be on the same line as other divs */
+    display: inline;
+}
+
+.className{
+    /* this combines the fixed width/height properties of the block display type with the flexibility of the inline div */
+    display: inline-block;
+}
+
+.className{
+    /* this will completly hide the div and the other elements will act as if the div doesn't exist */
+    display: none;
+}
+</code></pre>
+                <div class="tutorialCodeBlockPreview">
+                    From: <a href="learn/CSSDisplay.html">Learn CSS Display</a>
+                </div>
+            </div>
+            <br />
+            <div class="tutorialCodeBlock">
+                <pre><code class="language-css">
+.className{
+    /* margin doesn't include background */
+    margin: 10px;
+    /* padding does include background */
+    padding: 20px;
+    /* The width and height only cover the content */
+    box-sizing: content-box;
+    /* The width and height includes the padding and borders as well as the content */
+    box-sizing: border-box;
+}
+</code></pre>
+                <div class="tutorialCodeBlockPreview">
+                    From: <a href="learn/CSSBoxModel.html">Learn CSS Box Model</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div id="footer">
+            <div class="container">
+                LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
+            </div>
+        </div>
+
+        <script src="dependancies/prism.js"></script>
+        <script src="dependancies/jQuery213.js"></script>
+    </body>
+</html>

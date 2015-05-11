@@ -266,6 +266,7 @@
         padding: 5px;
         padding-top: 1px;
         color: #FFF;
+        word-wrap: break-word;
     }
 
     .tutorialCodeBlockPreview{
@@ -388,10 +389,12 @@
     }
 
     #hcQuizPage{
-      font-size: 150px;
-      width: 126px;
-      height: 152px;
-      padding: 24px 37px;
+        font-size: 150px;
+        width: 126px;
+        height: 152px;
+        padding-left: 35px;
+        padding-right: 39px;
+        padding-bottom: 48px;
     }
 
     .quizAnswers{
@@ -486,5 +489,11 @@
 
     #quizLink a:hover{
       text-decoration: underline;
+    }
+
+    #introCodeExamples{
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 25px;
     }
 }

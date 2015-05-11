@@ -25,14 +25,12 @@ var question2 = ['What selector do you use to style links the user has previousl
 var question3 = ['Which display type do you use for a div you want on its own line?', 'block', 'inline', 'inline-block'];
 var question4 = ['Does padding get counted in width and height?', 'Only in old versions of IE', 'Yes', 'No'];
 var question5 = ['Following on, what property would you use to include padding in width and height?', 'box-sizing: border-box', 'include-padding-sizing: yes', 'padding-in-width: yes', 'width: *width value*, padding-include'];
-var questionList = [question1, question2, question3, question4, question5];
+var question6 = ['If I want a element to be on the same line as other elements, but have a fixed size, what display type would I use?', 'inline-block', 'block', 'none', 'inline'];
+var questionList = [question1, question2, question3, question4, question5, question6];
 
 $(document).ready(function(){
     /* this function will make the methods on the homepage clickable whilst retaining their odd/even styling */
-    $('.hero').click(function() {
-        window.location = $(this).find('a').attr('href');
-        return false;
-    });
+    addNavClickableDiv();
 
     $('#enableMargins').hide();
     $('#paddingCodeBlock').hide();
@@ -176,13 +174,40 @@ function addClickHandlerAnswers(){
         $('#scoreCircle').removeClass('animated wobble');
       });
 
-      console.log(quizScore);
-    };
+      console.log("Right answer! :) Current Score: " + quizScore);
+    }
+    else{
+        console.log("Wrong answer! :( Current Score: " + quizScore);
+    }
     console.log('Clicked Quiz Answer');
     advanceQuestion();
   });
 }
 
+$(window).ready(function(){
+    $(window).resize(function() {
+        addNavClickableDiv();
+    });
+});
+
+function addClickableDivClickHandlers(){
+    $('.clickableDiv').click(function() {
+        window.location = $(this).find('a').attr('href');
+        console.log('Clicked a .clickableDiv');
+        return false;
+    });
+}
+
+function addNavClickableDiv(){
+    if ($(window).width() < 900) {
+        $('#headerNavigation li').addClass('clickableDiv')
+        addClickableDivClickHandlers()
+    }
+    else {
+        $('#headerNavigation li').removeClass('clickableDiv');
+        addClickableDivClickHandlers()
+    }
+}
 /*
   Shuffle function
   Used under Apache license from: https://github.com/coolaj86/knuth-shuffle

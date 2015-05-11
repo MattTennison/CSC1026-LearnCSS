@@ -324,10 +324,12 @@
     }
 
     #hcQuizPage{
-      font-size: 150px;
-      width: 126px;
-      height: 152px;
-      padding: 24px 37px;
+        font-size: 150px;
+        width: 126px;
+        height: 152px;
+        padding-left: 35px;
+        padding-right: 39px;
+        padding-bottom: 48px;
     }
 
     .quizAnswers{
@@ -395,4 +397,7 @@
       font-size: 100px;
     }
 
+    .headerNavigationSelected{
+        background-color: #3498db;
+    }
 }
