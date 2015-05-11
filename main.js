@@ -17,8 +17,8 @@ var questionListCounter = -1; //since we're going to start at the first element 
 /*
   set up questions in arrays
   First element = Question
-  Second element = Right question
-  Third+ elements = Wrong questions
+  Second element = Right answers
+  Third+ elements = Wrong answers
 */
 var question1 = ['Does margin include the background?', 'No', 'Yes'];
 var question2 = ['What selector do you use to style links the user has previously clicked?', ':visited', ':previous', ':history', ':visit']

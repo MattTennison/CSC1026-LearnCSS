@@ -110,19 +110,27 @@
     #hcLinkStyling{
         width: 152px;
         height: 152px;
-        padding: 24px;
+        padding-left: 20px;
+        padding-right: 28px;
+        padding-bottom: 48px;
     }
 
     #hcBoxModel{
         width: 126px;
         height: 152px;
-        padding: 24px 37px;
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-bottom: 48px;
     }
 
     #hcSelectors{
         width: 126px;
         height: 110px;
-        padding: 45px 37px;
+        /* padding: 45px 37px; */
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-top: 22px;
+        padding-bottom: 68px;
         font-size: 120px;
     }
 

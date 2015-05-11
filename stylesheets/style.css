@@ -1,8 +1,27 @@
 /*
     This line allows me to use the font Open Sans from Google Fonts
     Most users won't have this font pre-installed, and so this code ensures they'll still see the page with the correct font. Requires CSS3 support, but this is widespread now.
+
+    Name: Open Sans
+    Source: https://www.google.com/fonts
+    Date Downloaded: 10th May 2015
+    License: Apache License
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@font-face{
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans-Semibold.ttf');
+    font-weight: 600;
+}
 
 @media screen and (min-width: 900px) {
     body{
@@ -152,19 +171,27 @@
     #hcLinkStyling{
         width: 152px;
         height: 152px;
-        padding: 24px;
+        padding-left: 20px;
+        padding-right: 28px;
+        padding-bottom: 48px;
     }
 
     #hcBoxModel{
         width: 126px;
         height: 152px;
-        padding: 24px 37px;
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-bottom: 48px;
     }
 
     #hcSelectors{
         width: 126px;
         height: 110px;
-        padding: 45px 37px;
+        /* padding: 45px 37px; */
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-top: 22px;
+        padding-bottom: 68px;
         font-size: 120px;
     }
 
@@ -195,7 +222,6 @@
     #introText{
         width: 100%;
         height: auto;
-        margin-top: 25px;
         margin-bottom: 25px;
         color: #2c3e50;
         text-align: center;

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel=stylesheet href="../stylesheets/style.css" type="text/css"/>
@@ -46,10 +47,10 @@
                     That link doesn't look the best and it might not blend well into your design.
                 </div>
                 <div class="tutorialContentBlock">
-                    So, let's clear all the existing formatting from the link. To do this, we'll use CSS and the a selector.
+                    So, let's clear all the existing formatting from the link. To do this, we'll use CSS and the a:link selector.
                     <div class="tutorialCodeBlock">
                         <pre><code class="language-css">
-a{
+a:link{ /* this selector selects unvisited, unactive links */
     text-decoration: none; /* this removes the underline */
     color: #000; /* this makes the text black, and not that ugly default link blue */
 }</code></pre>
@@ -130,10 +131,6 @@ a:active{ /* the active selector applies the moment the link is clicked */
                 </div>
 
                 <div class="tutorialContentBlock">
-                    There's also another selector, :link which only targets unvisited, unactive links. This selector is essentially the same as the first one, a, so we're not going to go into it.
-                </div>
-
-                <div class="tutorialContentBlock">
                     <div id="goToQuiz">
                         Feeling confident? <br/>
                         <span id="quizLink"><a href="../quiz/main.html">Take the quiz!</a></span>
@@ -147,7 +144,12 @@ a:active{ /* the active selector applies the moment the link is clicked */
                 LearnCSS was created by Matthew Tennison, a student studying Computer Science at Newcastle University. This website is the work for CSC1026 coursework.
             </div>
         </div>
-
+        <!--
+            This is prism.js, a useful syntax highlighter. Used for code examples here and in the other tutorials.
+            Date Downloaded: 1st May 2015
+            Source: http://prismjs.com
+            License: MIT License
+        -->
         <script src="../dependancies/prism.js"></script>
         <script src="../dependancies/jQuery213.js"></script>
     </body>

@@ -2,12 +2,12 @@
     This stylesheet contains all the code for the examples in the CSS Link Styling tutorial
 */
 
-#blankSlateLink a{
+#blankSlateLink a:link{
     color: #000;
     text-decoration: none;
 }
 
-#secondExample a{
+#secondExample a:link{
     color: #000;
     text-decoration: none;
 }
@@ -16,7 +16,7 @@
     text-decoration: underline;
 }
 
-#thirdExample a{
+#thirdExample a:link{
     color: #000;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@
     color: #666;
 }
 
-#fourthExample a{
+#fourthExample a:link{
     color: #000;
     text-decoration: none;
 }
